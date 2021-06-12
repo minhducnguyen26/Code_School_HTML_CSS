@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icofont.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <title>6.3.2021</title>
+</head>
+<body>
+    <div id="page_wrapper">
+        <div id="header_wrapper"></div>
+        <header>
+            <div class="brand">
+                <img src="images/logo.png" alt="Brand Logo">
+            </div>
+
+            <nav>
+                <a href="" class="nav_links home">Order</a>
+                <a href="" class="nav_links">Locator</a>
+                <a href="" class="nav_links">Offers</a>
+                <a href="" class="nav_links">Join</a>
+                <a href="" class="nav_links">More</a>
+            </nav>
+
+            <div class="actions">
+                <button class="order_button">
+                    <i class="icofont-phone"></i>
+                    <span>Order Now</span>
+                </button>
+
+                <div class="cart_icon_wrappper">
+                    <i class="icofont-shopping-cart"></i>
+                    <div class="icon_counter">3</div>
+                </div>
+
+                <i class="icofont-navigation-menu"></i>
+                <i class="icofont-close"></i>
+            </div>
+        </header>
+
+        <div class="mobile_nav">
+            <a href="">Order</a>
+            <a href="">Locator</a>
+            <a href="">Offers</a>
+            <a href="">Join</a>
+            <a href="">More</a>
+        </div>
+
+        <div class="hero">
+            <img class="background" src="images/hero.jpg" alt="Popeyes's Background Image">
+        </div>
+
+        <div class="flex_boxes">
+            <div class="flex_images">
+                <img class="menu_images" src="images/sandwich.png" alt="Chicken Sandwich">
+                <img class="menu_images" src="images/legs.png" alt="Chicken Legs">
+            </div>
+            
+            <div class="flex_images">
+                <img class="menu_images" src="images/meal.jpg" alt="Meal for 2">
+                <img class="menu_images" src="images/bonafide.jpg" alt="Bonafide Dinner Box">
+            </div>
+        </div>
+
+        <div class="flex_boxes_1">
+            <div class="stay_safe">
+                <img src="images/stay_safe.png" alt="Staying safe in COVID-19.">
+                <div class="stay_safe_info">
+                    <h1>Staying Safe in COVID-19</h1>
+                    <p>Learn about the precautions and measures we are taking to keep our Guests and Team Members safe</p>
+                </div>
+            </div>
+
+            <div class="join_team">
+                <img src="images/join_team.jpg" alt="Join our team.">
+                <div class="join_team_info">
+                    <h1>Join The Popeyes Team!</h1>
+                    <p>Explore how you can join the Popeyes Team today.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Don't worry, we're still better than Chick-fil-A.</p>
+            <div class="social_medias">
+                <a href="" class="social_medias_link">
+                    <i class="icofont-facebook"></i>
+                </a>
+                <a href="" class="social_medias_link">
+                    <i class="icofont-instagram"></i>
+                </a>
+                <a href="" class="social_medias_link">
+                    <i class="icofont-twitter"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        var burger_menu = document.querySelector(".icofont-navigation-menu");
+        var close_menu  = document.querySelector(".icofont-close");
+        var mobile_nav  = document.querySelector(".mobile_nav");
+
+        burger_menu.onclick = function() {
+            burger_menu.style.display = "none";
+            close_menu.style.display  = "block"
+            mobile_nav.style.display  = "flex";
+        }
+
+        close_menu.onclick = function() {
+            burger_menu.style.display = "block";
+            close_menu.style.display  = "none"
+            mobile_nav.style.display  = "none";
+        }
+    </script>
+</body>
+</html>
